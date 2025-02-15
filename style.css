@@ -198,3 +198,10 @@ body {
   background-size: cover;
   animation: move-stars 30s linear infinite;
 }
+body {
+  background: url('https://source.unsplash.com/1600x900/?space,stars') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
