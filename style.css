@@ -98,3 +98,20 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 0 25px cyan;
 }
+body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Ascunde orice depășire a particulelor */
+}
+
+#particleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Îl pune în fundal */
+}
