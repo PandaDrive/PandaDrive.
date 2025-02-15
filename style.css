@@ -151,3 +151,14 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 15px cyan;
 }
+.fade-in {<h1 class="neon-title fade-in">🚀 PandaDrive 🚀</h1>
+<section class="fade-in"> ... </section>
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
