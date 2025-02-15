@@ -74,4 +74,19 @@ body {
 .cta-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 25px #0072ff;
+}.about {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.about h2 {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+.about p {
+    font-size: 1.1em;
 }
