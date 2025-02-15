@@ -77,3 +77,24 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 0 25px cyan;
 }
+.nft-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.nft-container img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nft-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px cyan;
+}
