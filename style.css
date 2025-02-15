@@ -58,3 +58,22 @@ footer {
     margin-top: 20px;
     font-size: 0.8em;
 }
+.nft-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nft-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nft-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px cyan;
+}
