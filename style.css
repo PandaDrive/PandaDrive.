@@ -115,3 +115,14 @@ body {
   height: 100vh;
   z-index: -1; /* Îl pune în fundal */
 }
+@keyframes neon-glow {
+  0% { text-shadow: 0 0 5px cyan, 0 0 10px cyan; }
+  50% { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
+  100% { text-shadow: 0 0 5px cyan, 0 0 10px cyan; }
+}
+
+.neon-title {
+  font-size: 3em;
+  color: cyan;
+  animation: neon-glow 1.5s infinite alternate;
+}
