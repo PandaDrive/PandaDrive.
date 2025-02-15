@@ -162,3 +162,25 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+.navbar {
+  position: fixed;
+  top: -60px; /* Ascuns inițial */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  text-align: center;
+  transition: top 0.3s;
+}
+
+.navbar a {
+  color: cyan;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+}
