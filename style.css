@@ -89,4 +89,35 @@ body {
 
 .about p {
     font-size: 1.1em;
+}.nft-container img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nft-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px cyan;
+}.roadmap {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.roadmap h2 {
+    color: #00c6ff;
+    text-shadow: 0 0 10px #00c6ff;
+}
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 10px cyan; }
+    50% { text-shadow: 0 0 20px cyan; }
+    100% { text-shadow: 0 0 10px cyan; }
+}
+
+.neon-title {
+    font-size: 2em;
+    color: cyan;
+    animation: neonGlow 1.5s infinite alternate;
 }
