@@ -126,3 +126,28 @@ body {
   color: cyan;
   animation: neon-glow 1.5s infinite alternate;
 }
+.cta-button {
+  background: linear-gradient(90deg, cyan, deepskyblue);
+  color: black;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px cyan;
+}
+
+.nft-container img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nft-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px cyan;
+}
