@@ -205,3 +205,49 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}.nft-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spațiere între imagini */
+}
+
+.nft-container img {
+  width: 150px; /* Ajustează dimensiunea */
+  border-radius: 10px;
+  box-shadow: 0 0 15px cyan;
+  transition: transform 0.3s;
+}
+
+.nft-container img:hover {
+  transform: scale(1.1);
+}.roadmap {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.roadmap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.roadmap ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.roadmap ul li img {
+  width: 25px;
+  margin-right: 10px;
+}
