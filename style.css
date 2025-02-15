@@ -267,3 +267,14 @@ body {
   background: url('URL_IMAGINE_FUNDAL.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+.roadmap {
+  margin-top: -20px; /* Mută roadmap-ul mai sus */
+}.nft-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Reduce distanța dintre NFT-uri */
+  margin-bottom: 5px; /* Micșorează spațiul dintre NFT-uri și roadmap */
+}body {
+  background: url('URL_IMAGINE_FUNDAL.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
