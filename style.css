@@ -1,1 +1,60 @@
+/* Setări generale */
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
 
+/* Titlu cu efect neon */
+.neon-title {
+    font-size: 3em;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+/* Subtitlu */
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Buton principal */
+.cta-button {
+    background: cyan;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: white;
+}
+
+/* Stilizare NFT-uri */
+.nft-container img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Roadmap */
+.roadmap {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
