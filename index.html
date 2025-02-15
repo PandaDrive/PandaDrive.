@@ -5,78 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PandaDrive - Drive to Earn</title>
     <style>
-    h1 {
-    animation: glow 2s infinite alternate;
-}footer {
-    margin-top: 50px;
-    padding: 10px;
-    background: black;
-    color: cyan;
-    font-size: 0.9em;
-    }
-@keyframes glow {
-    from { text-shadow: 0px 0px 10px cyan; }
-    to { text-shadow: 0px 0px 30px cyan; }
-}  nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-nav a {
-    color: cyan;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: color 0.3s;
-}.btn {
-    background: linear-gradient(90deg, cyan, blue);
-    box-shadow: 0px 0px 10px cyan;
-}section {
-    margin-top: 50px;
-    padding: 20px;
-    background: rgba(0, 255, 255, 0.1);
-    border-radius: 10px;
-}
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px cyan;
-}
-nav a:hover {
-    color: white;
-    text-shadow: 0px 0px 10px cyan;
-}  body {
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-    animation: neon-glow 2s infinite alternate;
-    background-image: radial-gradient(circle, rgba(0, 255, 255, 0.2) 10%, black 90%);
-}
-  h1 {
+        /* Fundal futurist */
+        body {
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: radial-gradient(circle, rgba(0, 255, 255, 0.1) 10%, black 90%);
+        }
+
+        /* Efect neon pe titlu */
+        h1 {
             color: cyan;
             text-shadow: 0px 0px 10px cyan;
             font-size: 3em;
+            animation: glow 2s infinite alternate;
         }
-       .btn {
-    background: linear-gradient(90deg, cyan, blue);
-    color: black;
-    padding: 15px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 20px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 15px cyan;
-}
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px cyan;
-}
+
+        /* Meniu navigație */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
         }
+        nav a {
+            color: cyan;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: white;
+            text-shadow: 0px 0px 10px cyan;
+        }
+
+        /* Butoane */
+        .btn {
+            background: linear-gradient(90deg, cyan, blue);
+            color: black;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 0px 15px cyan;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 30px cyan;
+        }
+
+        /* Galerie NFT */
         .gallery {
             display: flex;
             justify-content: center;
@@ -89,30 +73,66 @@ nav a:hover {
             border-radius: 10px;
             box-shadow: 0px 0px 15px cyan;
         }
-        @keyframes neon-glow {
-            from { text-shadow: 0px 0px 5px cyan; }
-            to { text-shadow: 0px 0px 20px cyan; }
+
+        /* Roadmap */
+        .roadmap {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background: black;
+            color: cyan;
+            font-size: 0.9em;
+        }
+
+        /* Animație neon */
+        @keyframes glow {
+            from { text-shadow: 0px 0px 10px cyan; }
+            to { text-shadow: 0px 0px 30px cyan; }
         }
     </style>
 </head>
 <body>
-  <nav>
-    <a href="#home">Acasă</a>
-    <a href="#about">Despre</a>
-    <a href="#contact">Contact</a>
-  </nav>  <h1>🚀 PandaDrive 🚀</h1>
+
+    <!-- Meniu de navigație -->
+    <nav>
+        <a href="#about">Despre</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#nfts">NFTs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Titlu -->
+    <h1>🚀 PandaDrive 🚀</h1>
     <p>Criptomoneda care îți răsplătește condusul!</p>
     <a href="https://t.me/pandadrive" class="btn">Alătură-te pe Telegram</a>
 
- <div class="gallery"><section id="about">
-    <h2>Despre PandaDrive</h2>
-    <p>PandaDrive este o criptomonedă inovatoare care îți răsplătește condusul! 🚗💨</p>
- </section>
-    <img src="https://i.imgur.com/ABC123.png" alt="NFT 1">
-    <img src="https://i.imgur.com/DEF456.png" alt="NFT 2">
-    <img src="https://i.imgur.com/GHI789.png" alt="NFT 3">
-</div>
-</body><footer>
-    <p>&copy; 2024 PandaDrive. Toate drepturile rezervate.</p>
-</footer>
+    <!-- Galerie NFT -->
+    <div class="gallery" id="nfts">
+        <img src="NFT_LINK_1" alt="NFT 1">
+        <img src="NFT_LINK_2" alt="NFT 2">
+        <img src="NFT_LINK_3" alt="NFT 3">
+    </div>
+
+    <!-- Roadmap -->
+    <div class="roadmap" id="roadmap">
+        <h2>📍 Roadmap PandaDrive</h2>
+        <p>🔹 Lansare Website & Comunitate</p>
+        <p>🔹 Listare pe Exchange-uri</p>
+        <p>🔹 NFT-uri Exclusive pentru deținători</p>
+        <p>🔹 Integrare în platforme de condus</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PandaDrive. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
 </html>
