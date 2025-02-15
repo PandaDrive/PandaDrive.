@@ -1,126 +1,17 @@
 body {
-    background: #0d0d0d;
+    background: radial-gradient(circle, #0a0f1a, #02050a);
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    padding: 20px;
 }
 
 .neon-title {
-    font-size: 3em;
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan;
+    font-size: 2.5em;
+    color: #00c6ff;
+    text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
 }
 
 .cta-button {
-    background: cyan;
-    color: black;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.cta-button:hover {
-    background: white;
-}
-
-.nft-gallery img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-}
-
-.roadmap {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 0.8em;
-}
-body {
-    background: linear-gradient(-45deg, #0d0d0d, #1a1a2e, #16213e, #0f3460);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}.cta-button {
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 50px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 15px #00c6ff;
-}
-
-.cta-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px #0072ff;
-}.about {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    backdrop-filter: blur(10px);
-}
-
-.about h2 {
-    color: cyan;
-    text-shadow: 0 0 10px cyan;
-}
-
-.about p {
-    font-size: 1.1em;
-}.nft-container img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.nft-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px cyan;
-}.roadmap {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-.roadmap h2 {
-    color: #00c6ff;
-    text-shadow: 0 0 10px #00c6ff;
-}
-@keyframes neonGlow {
-    0% { text-shadow: 0 0 10px cyan; }
-    50% { text-shadow: 0 0 20px cyan; }
-    100% { text-shadow: 0 0 10px cyan; }
-}
-
-.neon-title {
-    font-size: 2em;
-    color: cyan;
-    animation: neonGlow 1.5s infinite alternate;
-}.cta-button {
     background: linear-gradient(90deg, #00c6ff, #0072ff);
     color: white;
     padding: 12px 25px;
@@ -135,7 +26,9 @@ body {
 .cta-button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #00c6ff;
-}.nft-container img {
+}
+
+.nft-container img {
     width: 180px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -144,30 +37,16 @@ body {
 .nft-container img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px #00c6ff;
-}@keyframes neonGlow {
-    0% { text-shadow: 0 0 5px #00c6ff, 0 0 10px #0072ff; }
-    50% { text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff; }
-    100% { text-shadow: 0 0 5px #00c6ff, 0 0 10px #0072ff; }
-}body {
-    background: radial-gradient(circle, #0a0f1a, #02050a);
-    color: white;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
 }
 
-.roadmap-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #00c6ff;
-    animation: neonGlow 1.5s infinite alternate;
-}.roadmap {
+.roadmap, .tokenomics, .faq {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
-    backdrop-filter: blur(5px);
-    transition: transform 0.3s ease;
+    margin: 20px;
 }
 
-.roadmap:hover {
-    transform: translateY(-5px);
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
 }
