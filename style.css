@@ -1,225 +1,55 @@
+/* Import font futurist */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 /* Setări generale */
 body {
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Titlu cu efect neon */
-.neon-title {
-    font-size: 3em;
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-}
-
-/* Subtitlu */
-.subtitle {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-/* Buton principal */
-.cta-button {
-    background: cyan;
-    color: black;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.cta-button:hover {
-    background: white;
-}
-
-/* Stilizare NFT-uri */
-.nft-container img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-}
-
-/* Roadmap */
-.roadmap {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    margin-top: 20px;
-    font-size: 0.8em;
-}
-.nft-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.nft-container img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.nft-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px cyan;
-}
-.nft-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.nft-container img {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.nft-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px cyan;
-}
-body {
-  background: black;
+  background: url('URL_IMAGINE_FUNDAL.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Orbitron', sans-serif;
   text-align: center;
   padding: 20px;
-  overflow: hidden; /* Ascunde orice depășire a particulelor */
+  margin: 0;
 }
 
-#particleCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; /* Îl pune în fundal */
-}
-@keyframes neon-glow {
-  0% { text-shadow: 0 0 5px cyan, 0 0 10px cyan; }
-  50% { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
-  100% { text-shadow: 0 0 5px cyan, 0 0 10px cyan; }
-}
-
-.neon-title {
+/* Efect neon pentru titlu */
+h1 {
   font-size: 3em;
   color: cyan;
-  animation: neon-glow 1.5s infinite alternate;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
+  margin-bottom: 20px;
 }
+
+/* Buton futurist */
 .cta-button {
-  background: linear-gradient(90deg, cyan, deepskyblue);
+  background: cyan;
   color: black;
   padding: 15px 30px;
   font-size: 1.2em;
   text-decoration: none;
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: transform 0.3s, background 0.3s;
 }
 
 .cta-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px cyan;
+  background: white;
 }
 
-.nft-container img {
-  width: 200px;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.nft-container img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px cyan;
-}
-.fade-in {<h1 class="neon-title fade-in">🚀 PandaDrive 🚀</h1>
-<section class="fade-in"> ... </section>
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.navbar {
-  position: fixed;
-  top: -60px; /* Ascuns inițial */
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 15px 0;
-  text-align: center;
-  transition: top 0.3s;
-}
-
-.navbar a {
-  color: cyan;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.2em;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: white;
-}
-@keyframes move-stars {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 1000px 1000px;
-  }
-}
-
-body {
-  background: url('https://source.unsplash.com/1600x900/?space,stars') repeat;
-  background-size: cover;
-  animation: move-stars 30s linear infinite;
-}
-body {
-  background: url('https://source.unsplash.com/1600x900/?space,stars') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
-}.nft-container {
+/* Container pentru NFT-uri */
+.nft-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Spațiere între imagini */
+  gap: 15px;
+  margin-top: 20px;
 }
 
+/* Stilizare NFT-uri */
 .nft-container img {
-  width: 150px; /* Ajustează dimensiunea */
+  width: 180px;
   border-radius: 10px;
   box-shadow: 0 0 15px cyan;
   transition: transform 0.3s;
@@ -227,54 +57,45 @@ body {
 
 .nft-container img:hover {
   transform: scale(1.1);
-}.roadmap {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  max-width: 500px;
-  margin-top: 20px;
 }
 
+/* Roadmap styling */
+.roadmap {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px cyan;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Listă roadmap */
 .roadmap ul {
   list-style: none;
   padding: 0;
 }
 
 .roadmap ul li {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
-.roadmap ul li img {
-  width: 25px;
-  margin-right: 10px;
+/* Efect de glow pe link-uri */
+a {
+  color: cyan;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-.roadmap {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  max-width: 500px;
-  margin-top: 10px; /* Reduce spațiul de deasupra */
-}.nft-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Reduce distanța dintre NFT-uri */
-  margin-bottom: 10px; /* Reduce spațiul dintre NFT-uri și roadmap */
-}body {
-  background: url('URL_IMAGINE_FUNDAL.jpg') no-repeat center center fixed;
-  background-size: cover;
+
+a:hover {
+  color: white;
+  text-shadow: 0 0 10px cyan;
 }
-.roadmap {
-  margin-top: -20px; /* Mută roadmap-ul mai sus */
-}.nft-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Reduce distanța dintre NFT-uri */
-  margin-bottom: 5px; /* Micșorează spațiul dintre NFT-uri și roadmap */
-}body {
-  background: url('URL_IMAGINE_FUNDAL.jpg') no-repeat center center fixed;
-  background-size: cover;
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.8em;
 }
