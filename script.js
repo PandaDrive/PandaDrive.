@@ -98,3 +98,6 @@ window.addEventListener("scroll", function() {
     let navbar = document.querySelector(".navbar");
     navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
+function toggleFAQ(item) {
+    item.classList.toggle("active");
+}
