@@ -557,3 +557,23 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 0 10px cyan, 0 0 20px cyan;
 }
+/* 💬 Buton plutitor pentru chat */
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px cyan;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#chat-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px cyan;
+}
