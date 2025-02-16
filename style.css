@@ -205,3 +205,38 @@ section:hover {
     opacity: 1;
     transform: translateY(0);
 }
+/* Efect neon pentru titluri */
+h1, h2 {
+    text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
+}
+
+/* Efect neon pe buton */
+.button-neon {
+    background-color: transparent;
+    color: cyan;
+    border: 2px solid cyan;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px cyan;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-neon:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Fundal parallax */
+.parallax {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
