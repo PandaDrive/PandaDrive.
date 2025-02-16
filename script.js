@@ -116,3 +116,9 @@ function revealSections() {
 
 window.addEventListener("scroll", revealSections);
 revealSections();
+// Dezactivează animațiile pe dispozitive mai vechi
+if (window.innerWidth < 600) {
+    document.querySelectorAll(".hidden").forEach(el => {
+        el.classList.remove("hidden");
+    });
+}
