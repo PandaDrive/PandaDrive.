@@ -47,3 +47,34 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealSection);
     revealSection();
 });
+// Scroll lin pentru link-urile din meniu
+document.querySelectorAll(".navbar a").forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        window.scrollTo({
+            top: targetSection.offsetTop - 60, 
+            behavior: "smooth"
+        });
+    });
+});
+
+// Afișare buton scroll top la derulare
+window.addEventListener("scroll", function() {
+    let scrollTopButton = document.getElementById("scrollTop");
+    if (window.scrollY > 300) {
+        scrollTopButton.style.display = "block";
+    } else {
+        scrollTopButton.style.display = "none";
+    }
+});
+
+// Funcționalitate scroll back to top
+document.getElementById("scrollTop").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
