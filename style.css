@@ -86,4 +86,52 @@ footer {
     margin-top: 20px;
     padding: 20px;
     font-size: 0.8em;
+}/* Animare text neon */
+@keyframes neon-glow {
+    0% { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
+    50% { text-shadow: 0 0 20px cyan, 0 0 40px cyan; }
+    100% { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
+}
+
+.neon-text {
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+/* Animare buton Telegram */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.cta-button {
+    animation: pulse 2s infinite;
+}
+
+/* Efecte hover pentru secțiuni */
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animație Roadmap (apariție treptată) */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+#roadmap, #tokenomics, #faq {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* NFT-uri animate */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.nft-container img {
+    animation: float 3s infinite ease-in-out;
 }
