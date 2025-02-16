@@ -101,3 +101,18 @@ window.addEventListener("scroll", function() {
 function toggleFAQ(item) {
     item.classList.toggle("active");
 }
+// Funcție pentru a activa efectul de apariție la scroll
+function revealSections() {
+    let sections = document.querySelectorAll(".hidden");
+    let windowHeight = window.innerHeight;
+    
+    sections.forEach(section => {
+        let sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < windowHeight - 100) {
+            section.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealSections);
+revealSections();
