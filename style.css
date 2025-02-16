@@ -1,73 +1,60 @@
+/* General */
 body {
-    background-color: #0a0f1e;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #003b36, #00796b);
+    color: white;
     text-align: center;
+    margin: 0;
 }
 
-nav {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
+.nav-links li {
     display: inline;
     margin: 0 15px;
 }
-
-nav ul li a {
-    color: #00d8ff;
-    text-decoration: none;
-}
-
-header {
-    padding: 50px 0;
-}
-
-.glow {
-    color: #00d8ff;
-    text-shadow: 0 0 10px #00d8ff, 0 0 20px #00d8ff;
-}
-
-button {
-    background: #007BFF;
+.nav-links a {
     color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nft-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Hero Section */
+.hero {
+    background: url('panda-car.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+}
+.cta-button {
+    background: #00ff7f;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
-.nft-card {
-    background: #161b33;
-    padding: 10px;
+/* NFT Market */
+.nft-market {
+    margin-top: 50px;
+}
+.swiper-container {
+    width: 80%;
+    margin: auto;
+}
+.swiper-slide img {
+    width: 100%;
     border-radius: 10px;
 }
 
-section {
-    margin: 50px 0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #00d8ff;
-}
-
+/* Footer */
 footer {
-    background: black;
+    margin-top: 50px;
     padding: 20px;
-}
-
-.social-links a {
-    margin: 0 10px;
-    color: #00d8ff;
+    background: rgba(0, 0, 0, 0.7);
 }
