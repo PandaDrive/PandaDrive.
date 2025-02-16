@@ -438,3 +438,30 @@ footer {
     transform: scale(1.2);
     text-shadow: 0 0 10px cyan, 0 0 20px cyan;
 }
+/* 🔥 Container pentru counter */
+#countdown {
+    background: rgba(0, 0, 0, 0.8);
+    color: cyan;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* 🕒 Stilizare cifre countdown */
+.countdown-time {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.countdown-time div {
+    background: rgba(0, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+}
