@@ -411,3 +411,30 @@ h1, h2 {
         padding: 15px;
     }
 }
+/* 🚀 Footer futurist */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    color: cyan;
+    box-shadow: 0 -5px 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Link-uri social media */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: cyan;
+    font-size: 1.5em;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
