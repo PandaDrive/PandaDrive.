@@ -122,3 +122,13 @@ if (window.innerWidth < 600) {
         el.classList.remove("hidden");
     });
 }
+// Scroll smooth pentru toate link-urile interne
+document.querySelectorAll("a[href^='#']").forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+});
