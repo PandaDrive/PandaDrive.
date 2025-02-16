@@ -199,4 +199,29 @@ document.getElementById("chat-button").addEventListener("click", function() {
 });
 function buyToken() {
     alert("🛒 Funcția de cumpărare va fi activată la lansare!");
+}// 📊 Integrare TradingView Chart pentru PandaDrive
+function loadTradingView() {
+    let script = document.createElement("script");
+    script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
+    script.async = true;
+    script.innerHTML = JSON.stringify({
+        "symbols": [["BINANCE:PANDAUSDT|1D"]],
+        "chartOnly": false,
+        "width": "100%",
+        "height": 400,
+        "locale": "en",
+        "colorTheme": "dark",
+        "gridLineColor": "#2A2E39",
+        "trendLineColor": "#1976D2",
+        "underLineColor": "#E3F2FD",
+        "isTransparent": false,
+        "autosize": true,
+        "showVolume": true,
+        "scaleMode": "Percentage"
+    });
+
+    document.getElementById("tradingview_chart").appendChild(script);
 }
+
+// 🚀 Încărcăm graficul la deschiderea paginii
+window.onload = loadTradingView;
