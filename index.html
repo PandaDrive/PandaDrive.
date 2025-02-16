@@ -1,181 +1,81 @@
-<nav class="navbar">
-    <a href="#home">Acasă</a>
-    <a href="#roadmap">Roadmap</a>
-    <a href="#tokenomics">Tokenomics</a>
-    <a href="#faq">FAQ</a>
-</nav>
-
-<button id="scrollTop">⬆</button><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PandaDrive - Criptomoneda pentru șoferi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PandaDrive - Criptomoneda care îți răsplătește condusul</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
     <header>
-        <h1>🚀 <span class="neon-text">PandaDrive</span> 🚀</h1>
+        <h1>🚀 <span class="glow">PandaDrive</span> 🚀</h1>
         <p>Criptomoneda care îți răsplătește condusul!</p>
-        <a href="#" class="cta-button">Alătură-te pe Telegram</a>
+        <button onclick="joinTelegram()">🚀 Alătură-te pe Telegram</button>
     </header>
 
+    <!-- NFT SECTION -->
     <section id="nfts">
         <h2>NFT-urile Noastre</h2>
         <div class="nft-container">
-            <img src="nft1.png" alt="NFT PandaDrive 1">
-            <img src="nft2.png" alt="NFT PandaDrive 2">
+            <div class="nft-card">
+                <img src="nft1.png" alt="NFT PandaDrive 1">
+                <p>NFT PandaDrive 1</p>
+            </div>
+            <div class="nft-card">
+                <img src="nft2.png" alt="NFT PandaDrive 2">
+                <p>NFT PandaDrive 2</p>
+            </div>
         </div>
     </section>
 
+    <!-- ROADMAP -->
     <section id="roadmap">
-        <h2>📍 <span class="neon-text">Roadmap PandaDrive</span></h2>
+        <h2>📍 Roadmap PandaDrive</h2>
         <p>🔥 De ce PandaDrive?</p>
         <ul>
-            <li>🔷 NFT-uri unice</li>
-            <li>🔷 Recompense pentru condus</li>
-            <li>🔷 Integrare în platforme auto</li>
+            <li>🔹 NFT-uri unice</li>
+            <li>🔹 Recompense pentru condus</li>
+            <li>🔹 Integrare în platforme auto</li>
         </ul>
     </section>
 
+    <!-- TOKENOMICS -->
     <section id="tokenomics">
-        <h2>📊 <span class="neon-text">Tokenomics</span></h2>
+        <h2>📊 Tokenomics</h2>
         <p>Distribuție transparentă și sustenabilă.</p>
+        <div id="crypto-price">Preț actual: <span id="price">...</span> USDT</div>
     </section>
 
+    <!-- FAQ -->
     <section id="faq">
-        <h2>❓ <span class="neon-text">FAQ</span></h2>
+        <h2>❓ FAQ</h2>
         <p><strong>Când îmi pot revendica token-urile?</strong></p>
         <p>Revendicările încep în Q2 2024.</p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2024 PandaDrive. Toate drepturile rezervate.</p>
+        <div class="social-links">
+            <a href="#">🐦 Twitter</a>
+            <a href="#">💬 Telegram</a>
+            <a href="#">🎮 Discord</a>
+        </div>
     </footer>
+
+    <!-- SCRIPTURI -->
+    <script src="script.js"></script>
 </body>
 </html>
-<section id="roadmap" class="card hidden">
-    <h2>📍 Roadmap PandaDrive</h2>
-    <p>Planul nostru pentru viitorul PandaDrive...</p>
-</section>
-
-<section id="tokenomics" class="card hidden">
-    <h2>📊 Tokenomics</h2>
-    <p>Distribuția transparentă și sustenabilă...</p>
-</section>
-
-<section id="faq" class="card hidden">
-    <h2>❓ FAQ</h2>
-    <p>Întrebările frecvente despre PandaDrive...</p>
-</section>
-<section class="parallax">
-    <h1>🚀 Bine ai venit la PandaDrive</h1>
-</section>
-
-<section>
-    <button class="button-neon">Alătură-te pe Telegram</button>
-</section>
-<nav class="navbar">
-    <a href="#roadmap">Roadmap</a>
-    <a href="#tokenomics">Tokenomics</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-</nav>
-<section id="roadmap" class="card">
-    <h2>📍 Roadmap PandaDrive</h2>
-    <p>Planurile noastre pentru viitor...</p>
-</section>
-
-<section id="tokenomics" class="card">
-    <h2>📊 Tokenomics</h2>
-    <p>Distribuție transparentă și sustenabilă.</p>
-</section>
-<button class="button">🚀 Alătură-te pe Telegram</button>
-<div class="faq-container">
-    <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>❓ Când îmi pot revendica token-urile?</h3>
-        <p class="faq-answer">Revendicările încep în Q2 2024.</p>
-    </div>
-    <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>⚡ Cum funcționează PandaDrive?</h3>
-        <p class="faq-answer">Prin NFT-uri și recompense pentru condus.</p>
-    </div>
-</div>
-<section id="nfts" class="hidden">
-    <h2>🎨 NFT-urile Noastre</h2>
-    <div class="nft-container">
-        <img src="nft1.gif" alt="NFT PandaDrive 1" loading="lazy">
-<img src="nft2.gif" alt="NFT PandaDrive 2" loading="lazy">
-    </div>
-</section>
-<footer>
-    <p>© 2024 PandaDrive. Toate drepturile rezervate.</p>
-    <div class="social-icons">
-        <a href="https://twitter.com/PandaDrive" target="_blank">🐦 Twitter</a>
-        <a href="https://t.me/PandaDrive" target="_blank">💬 Telegram</a>
-        <a href="https://discord.gg/PandaDrive" target="_blank">🎮 Discord</a>
-    </div>
-</footer>
-<section id="launch">
-    <h2>🚀 Lansarea PandaDrive începe în:</h2>
-    <div id="countdown">
-        <div class="countdown-time">
-            <div><span id="days">00</span> zile</div>
-            <div><span id="hours">00</span> ore</div>
-            <div><span id="minutes">00</span> min</div>
-            <div><span id="seconds">00</span> sec</div>
-        </div>
-    </div>
-</section>
-<section id="signup">
-    <h2>🔥 Înscrie-te pentru Early Access</h2>
-    <p>Fii printre primii care primesc update-uri despre PandaDrive!</p>
-    <input type="email" id="email" placeholder="Introdu emailul tău">
-    <button onclick="submitForm()">✅ Înscrie-mă</button>
-    <p id="confirmation">✅ Te-ai înscris cu succes!</p>
-</section>
-<section id="testimonials">
-    <h2>⭐ Ce spun utilizatorii despre PandaDrive?</h2>
-    <div class="testimonial" id="testimonial1">"PandaDrive schimbă jocul în industria auto! 🚀" - Alex</div>
-    <div class="testimonial" id="testimonial2">"Ador ideea de a câștiga recompense pentru condus! ❤️" - Maria</div>
-    <div class="testimonial" id="testimonial3">"NFT-urile sunt 🔥, iar comunitatea este incredibilă!" - Daniel</div>
-    
-    <button id="prev">⬅</button>
-    <button id="next">➡</button>
-</section>
-<!-- 🗨️ Widget Chat Live -->
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function(){
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/67b13be97888a3190bb5e190/1ik65424k';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
-<button id="chat-button">💬 Suport</button>
-<section id="buy-token">
-    <h2>🔥 Cumpără PandaDrive Token</h2>
-    <button onclick="buyToken()">🛒 Cumpără acum</button>
-</section>
-
-<section id="social-media">
-    <h2>🌍 Urmărește-ne</h2>
-    <a href="https://twitter.com" target="_blank">🐦 Twitter</a> |
-    <a href="https://t.me" target="_blank">💬 Telegram</a> |
-    <a href="https://discord.com" target="_blank">🎮 Discord</a>
-</section>
