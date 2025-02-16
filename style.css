@@ -465,3 +465,51 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px cyan;
 }
+/* 🌟 Container formular */
+#signup {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px cyan;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* ✍️ Stilizare input */
+#signup input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+/* 🔥 Buton submit cu efect neon */
+#signup button {
+    background: linear-gradient(90deg, cyan, blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#signup button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px cyan, 0 0 30px cyan;
+}
+
+/* ✅ Mesaj de confirmare */
+#confirmation {
+    display: none;
+    color: lime;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
