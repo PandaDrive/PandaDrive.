@@ -9,3 +9,6 @@ var swiper = new Swiper(".swiper", {
     pagination: { el: ".swiper-pagination", clickable: true },
     autoplay: { delay: 3000 },
 });
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("CryptoPanda este live!");
+});
