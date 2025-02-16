@@ -45,3 +45,4 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     removeDuplicates(".roadmap"); // Asigură-te că secțiunile au această clasă
     removeDuplicates(".tokenomics"); // Asigură-te că aceste elemente au clasa corectă
 });
+<script src="script.js"></script>
