@@ -1,61 +1,89 @@
-/* 🌌 Fundal futurist */
+/* Font și fundal general */
 body {
+    font-family: Arial, sans-serif;
     background: linear-gradient(180deg, #000428, #004e92);
     color: white;
-    font-family: 'Arial', sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* 💡 Titlu cu efect neon */
-h1 {
+/* Header */
+header {
+    padding: 20px;
+}
+
+.neon-text {
     font-size: 2.5em;
     color: cyan;
-    text-shadow: 0 0 15px cyan, 0 0 30px cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
 }
 
-/* 🔥 Buton cu efect glow */
+/* Buton Telegram */
 .cta-button {
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.2em;
-    border-radius: 30px;
-    text-decoration: none;
     display: inline-block;
-    box-shadow: 0 0 15px #0072ff;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px 30px;
+    background: cyan;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .cta-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px #00c6ff;
+    background: white;
 }
 
-/* 📜 Carduri pentru Roadmap, Tokenomics, FAQ */
-.roadmap, .tokenomics, .faq {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 0 0 20px #00c6ff;
-    transition: transform 0.3s, box-shadow 0.3s;
+/* NFT-uri */
+.nft-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
 }
 
-.roadmap:hover, .tokenomics:hover, .faq:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 30px #00c6ff;
-}
-
-/* 🖼️ NFT-uri animate */
 .nft-container img {
     width: 200px;
-    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 15px cyan;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nft-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px cyan;
+    transform: scale(1.1);
+}
+
+/* Secțiuni generale */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Roadmap */
+#roadmap {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px cyan;
+    padding: 30px;
+}
+
+/* Tokenomics */
+#tokenomics {
+    background: rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 15px gold;
+}
+
+/* FAQ */
+#faq {
+    background: rgba(255, 0, 0, 0.2);
+    box-shadow: 0 0 15px red;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 0.8em;
 }
