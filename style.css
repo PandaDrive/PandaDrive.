@@ -513,3 +513,47 @@ footer {
     font-size: 1.2em;
     margin-top: 15px;
 }
+/* 🗣️ Container testimoniale */
+#testimonials {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px cyan;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* 📜 Stilizare slider */
+.testimonial {
+    display: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Efect de apariție */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 🔄 Butoane pentru schimbarea testimonialelor */
+#prev, #next {
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#prev:hover, #next:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
