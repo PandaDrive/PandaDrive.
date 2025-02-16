@@ -135,3 +135,48 @@ section:hover {
 .nft-container img {
     animation: float 3s infinite ease-in-out;
 }
+/* Stilizare meniu fix */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+/* Link-urile din meniu */
+.navbar a {
+    color: cyan;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* Buton scroll top */
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: cyan;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    display: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#scrollTop:hover {
+    background: white;
+}
