@@ -12,3 +12,35 @@ var swiper = new Swiper(".swiper", {
 document.addEventListener("DOMContentLoaded", function() {
     console.log("CryptoPanda este live!");
 });
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("CryptoPanda este live!");
+
+    // Listă de fișiere de verificat
+    const filesToCheck = [
+        "assets/background.png",
+        "assets/panda-car.png",
+        "assets/panda1.png",
+        "assets/panda2.png",
+        "assets/steering-wheel.png",
+        "styles.css",
+        "script.js"
+    ];
+
+    // Funcție care verifică dacă un fișier există
+    function checkFileExists(file) {
+        fetch(file, { method: 'HEAD' })
+            .then(response => {
+                if (!response.ok) {
+                    console.error(`❌ Fișier lipsă: ${file}`);
+                } else {
+                    console.log(`✅ Fișier OK: ${file}`);
+                }
+            })
+            .catch(error => {
+                console.error(`🚨 Eroare la verificarea fișierului ${file}:`, error);
+            });
+    }
+
+    // Verificăm toate fișierele din listă
+    filesToCheck.forEach(file => checkFileExists(file));
+});
