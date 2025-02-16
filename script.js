@@ -172,3 +172,25 @@ function submitForm() {
         alert("❌ Introdu o adresă de email validă!");
     }
 }
+let testimonials = document.querySelectorAll(".testimonial");
+let currentIndex = 0;
+
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.style.display = i === index ? "block" : "none";
+    });
+}
+
+// Schimbare testimonial la click pe butoane
+document.getElementById("prev").addEventListener("click", function() {
+    currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+    showTestimonial(currentIndex);
+});
+
+document.getElementById("next").addEventListener("click", function() {
+    currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
+    showTestimonial(currentIndex);
+});
+
+// Afișăm primul testimonial la început
+showTestimonial(currentIndex);
