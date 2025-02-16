@@ -576,4 +576,63 @@ footer {
 #chat-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px cyan;
+}/* 🌌 Background general */
+body {
+    background: linear-gradient(180deg, #020024, #090979, #00d4ff);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔥 Glow pentru titluri */
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px cyan, 0 0 20px blue;
+}
+
+/* ✨ Stil pentru butoane */
+button {
+    background: linear-gradient(90deg, cyan, blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px cyan, 0 0 30px blue;
+}
+
+/* 🚀 Stil pentru contorul de lansare */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+}
+
+.countdown div {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 60px;
+}
+
+/* 💎 Stil pentru Roadmap, Tokenomics și FAQ */
+.section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    margin: 20px auto;
+    max-width: 800px;
 }
