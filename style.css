@@ -1,20 +1,19 @@
-/* Background futuristic */
+/* 🌌 Fundal futurist */
 body {
-    background: url('background.gif') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(180deg, #000428, #004e92);
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
 }
 
-/* Neon Title */
-.neon-title {
-    font-size: 2.8em;
-    color: #00c6ff;
-    text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+/* 💡 Titlu cu efect neon */
+h1 {
+    font-size: 2.5em;
+    color: cyan;
+    text-shadow: 0 0 15px cyan, 0 0 30px cyan;
 }
 
-/* CTA Button */
+/* 🔥 Buton cu efect glow */
 .cta-button {
     background: linear-gradient(90deg, #00c6ff, #0072ff);
     color: white;
@@ -32,54 +31,31 @@ body {
     box-shadow: 0 0 25px #00c6ff;
 }
 
-/* NFT Section */
-.nft-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.nft-container img {
-    width: 200px;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nft-container img:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 25px #00c6ff;
-}
-
-/* Roadmap */
-.roadmap {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 0 0 20px #00c6ff;
-}
-
-/* Tokenomics */
-.tokenomics {
+/* 📜 Carduri pentru Roadmap, Tokenomics, FAQ */
+.roadmap, .tokenomics, .faq {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 15px;
     margin: 20px;
-    box-shadow: 0 0 20px #ffcc00;
+    box-shadow: 0 0 20px #00c6ff;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* FAQ */
-.faq {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 0 0 20px #ff4444;
+.roadmap:hover, .tokenomics:hover, .faq:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px #00c6ff;
 }
 
-/* Footer */
-footer {
-    margin-top: 20px;
-    font-size: 0.8em;
+/* 🖼️ NFT-uri animate */
+.nft-container img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nft-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px cyan;
 }
