@@ -194,3 +194,6 @@ document.getElementById("next").addEventListener("click", function() {
 
 // Afișăm primul testimonial la început
 showTestimonial(currentIndex);
+document.getElementById("chat-button").addEventListener("click", function() {
+    Tawk_API.toggle();
+});
