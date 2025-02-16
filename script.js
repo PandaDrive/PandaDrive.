@@ -132,3 +132,32 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
         }
     });
 });
+// Setăm data lansării (exemplu: 1 iulie 2024)
+const launchDate = new Date("July 1, 2024 00:00:00").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const timeLeft = launchDate - now;
+
+    // Calculăm zile, ore, minute, secunde
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    // Afișăm valorile în HTML
+    document.getElementById("days").textContent = days < 10 ? "0" + days : days;
+    document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+    document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+    document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+
+    // Oprim counterul dacă timpul a expirat
+    if (timeLeft < 0) {
+        document.getElementById("countdown").innerHTML = "<h3>🚀 PandaDrive este live acum!</h3>";
+        clearInterval(interval);
+    }
+}
+
+// Actualizăm counterul în fiecare secundă
+const interval = setInterval(updateCountdown, 1000);
+updateCountdown();
