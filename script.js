@@ -78,3 +78,18 @@ document.getElementById("scrollTop").addEventListener("click", function() {
         behavior: "smooth"
     });
 });
+// Funcție pentru animare la scroll
+function revealSections() {
+    let sections = document.querySelectorAll(".hidden");
+    let windowHeight = window.innerHeight;
+    
+    sections.forEach(section => {
+        let sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < windowHeight - 100) {
+            section.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealSections);
+revealSections();
