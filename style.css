@@ -1,638 +1,73 @@
-/* Font și fundal general */
 body {
+    background-color: #0a0f1e;
+    color: #fff;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #000428, #004e92);
-    color: white;
     text-align: center;
-    margin: 0;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-/* Header */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00d8ff;
+    text-decoration: none;
+}
+
 header {
-    padding: 20px;
+    padding: 50px 0;
 }
 
-.neon-text {
-    font-size: 2.5em;
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
+.glow {
+    color: #00d8ff;
+    text-shadow: 0 0 10px #00d8ff, 0 0 20px #00d8ff;
 }
 
-/* Buton Telegram */
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: cyan;
-    color: black;
-    font-size: 1.2em;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.cta-button:hover {
-    background: white;
-}
-
-/* NFT-uri */
-.nft-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.nft-container img {
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-    transition: transform 0.3s ease-in-out;
-}
-
-.nft-container img:hover {
-    transform: scale(1.1);
-}
-
-/* Secțiuni generale */
-section {
-    margin: 40px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-}
-
-/* Roadmap */
-#roadmap {
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 15px cyan;
-    padding: 30px;
-}
-
-/* Tokenomics */
-#tokenomics {
-    background: rgba(255, 215, 0, 0.2);
-    box-shadow: 0 0 15px gold;
-}
-
-/* FAQ */
-#faq {
-    background: rgba(255, 0, 0, 0.2);
-    box-shadow: 0 0 15px red;
-}
-
-/* Footer */
-footer {
-    margin-top: 20px;
-    padding: 20px;
-    font-size: 0.8em;
-}/* Animare text neon */
-@keyframes neon-glow {
-    0% { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
-    50% { text-shadow: 0 0 20px cyan, 0 0 40px cyan; }
-    100% { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
-}
-
-.neon-text {
-    animation: neon-glow 1.5s infinite alternate;
-}
-
-/* Animare buton Telegram */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-.cta-button {
-    animation: pulse 2s infinite;
-}
-
-/* Efecte hover pentru secțiuni */
-section:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Animație Roadmap (apariție treptată) */
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-#roadmap, #tokenomics, #faq {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-/* NFT-uri animate */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-.nft-container img {
-    animation: float 3s infinite ease-in-out;
-}
-/* Stilizare meniu fix */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-}
-
-/* Link-urile din meniu */
-.navbar a {
-    color: cyan;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar a:hover {
-    color: white;
-}
-
-/* Buton scroll top */
-#scrollTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: cyan;
-    color: black;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 1.2em;
-    display: none;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-#scrollTop:hover {
-    background: white;
-}
-/* Efect de hover 3D pe carduri */
-.card {
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05) rotateY(5deg);
-    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.8);
-}
-
-/* Animație de fade-in la apariția secțiunilor */
-.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* Efect neon pentru titluri */
-h1, h2 {
-    text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
-}
-
-/* Efect neon pe buton */
-.button-neon {
-    background-color: transparent;
-    color: cyan;
-    border: 2px solid cyan;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    box-shadow: 0 0 10px cyan;
-    transition: all 0.3s ease-in-out;
-}
-
-.button-neon:hover {
-    background-color: cyan;
-    color: black;
-    box-shadow: 0 0 20px cyan;
-}
-
-/* Fundal parallax */
-.parallax {
-    background: url('images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2em;
-    text-align: center;
-}
-/* Meniu fix transparent cu efect neon */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Transparent */
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 0 10px cyan;
-    z-index: 1000;
-    transition: background 0.3s ease-in-out;
-}
-
-/* Efect de glow la hover */
-.navbar a {
-    color: cyan;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar a:hover {
-    text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
-}
-
-/* Efect la scroll */
-.scrolled {
-    background: rgba(0, 0, 0, 0.95);
-    box-shadow: 0 0 20px cyan;
-}
-/* Stilizare generală carduri */
-.card {
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efect neon la hover */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px cyan, 0 0 30px cyan;
-}
-/* Stilizare generală pentru butoane */
-.button {
-    background: linear-gradient(45deg, cyan, blue);
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-/* Container general FAQ */
-.faq-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-/* Stilizare întrebări */
-.faq-item {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-/* Efect glow la hover */
-.faq-item:hover {
-    background: rgba(0, 255, 255, 0.3);
-    transform: scale(1.02);
-}
-
-/* Stilizare răspunsuri */
-.faq-answer {
-    display: none;
-    padding: 10px;
-    color: cyan;
-}
-
-/* Activează răspunsurile */
-.faq-item.active .faq-answer {
-    display: block;
-}
-/* Efect neon la hover */
-.button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px cyan, 0 0 30px cyan;
-}
-/* Container NFT-uri */
-.nft-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-/* NFT-uri animate */
-.nft-container img {
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-
-/* Efect hover (NFT se mărește și plutește ușor) */
-.nft-container img:hover {
-    transform: scale(1.1) rotate(3deg);
-    box-shadow: 0 0 25px cyan;
-}
-
-/* Efect de apariție treptată la scroll */
-.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* 📱 Optimizare pentru ecrane mici */
-@media screen and (max-width: 768px) {
-    /* Ajustează dimensiunea titlurilor */
-    h1, h2 {
-        font-size: 1.8em;
-    }
-
-    /* Buton mai compact */
-    .button {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-
-    /* Meniu adaptat pentru mobil */
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    .navbar a {
-        font-size: 1em;
-        padding: 8px;
-    }
-
-    /* NFT-uri mai mici pe mobil */
-    .nft-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nft-container img {
-        width: 150px;
-    }
-
-    /* Secțiuni mai compacte */
-    section {
-        width: 95%;
-        padding: 15px;
-    }
-}
-/* 🚀 Footer futurist */
-footer {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    text-align: center;
-    color: cyan;
-    box-shadow: 0 -5px 15px rgba(0, 255, 255, 0.3);
-}
-
-/* Link-uri social media */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-.social-icons a {
-    color: cyan;
-    font-size: 1.5em;
-    transition: all 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-    transform: scale(1.2);
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-}
-/* 🔥 Container pentru counter */
-#countdown {
-    background: rgba(0, 0, 0, 0.8);
-    color: cyan;
-    font-size: 2em;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 500px;
-}
-
-/* 🕒 Stilizare cifre countdown */
-.countdown-time {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.countdown-time div {
-    background: rgba(0, 255, 255, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px cyan;
-}
-/* 🌟 Container formular */
-#signup {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 15px cyan;
-    width: 80%;
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-/* ✍️ Stilizare input */
-#signup input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid cyan;
-    border-radius: 5px;
-    background: transparent;
-    color: white;
-    font-size: 1em;
-}
-
-/* 🔥 Buton submit cu efect neon */
-#signup button {
-    background: linear-gradient(90deg, cyan, blue);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#signup button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px cyan, 0 0 30px cyan;
-}
-
-/* ✅ Mesaj de confirmare */
-#confirmation {
-    display: none;
-    color: lime;
-    font-size: 1.2em;
-    margin-top: 15px;
-}
-/* 🗣️ Container testimoniale */
-#testimonials {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 15px cyan;
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-/* 📜 Stilizare slider */
-.testimonial {
-    display: none;
-    font-size: 1.2em;
-    color: white;
-    padding: 10px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Efect de apariție */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* 🔄 Butoane pentru schimbarea testimonialelor */
-#prev, #next {
-    background: cyan;
-    color: black;
-    border: none;
-    padding: 10px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#prev:hover, #next:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px cyan, 0 0 20px cyan;
-}
-/* 💬 Buton plutitor pentru chat */
-#chat-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: cyan;
-    color: black;
-    border: none;
-    padding: 12px 15px;
-    font-size: 1.2em;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 0 10px cyan;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#chat-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px cyan;
-}/* 🌌 Background general */
-body {
-    background: linear-gradient(180deg, #020024, #090979, #00d4ff);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* 🔥 Glow pentru titluri */
-h1, h2 {
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px cyan, 0 0 20px blue;
-}
-
-/* ✨ Stil pentru butoane */
 button {
-    background: linear-gradient(90deg, cyan, blue);
+    background: #007BFF;
     color: white;
-    border: none;
     padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 50px;
+    border: none;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px cyan, 0 0 30px blue;
-}
-
-/* 🚀 Stil pentru contorul de lansare */
-.countdown {
+.nft-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    font-size: 2em;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
+    gap: 20px;
 }
 
-.countdown div {
-    background: rgba(0, 0, 0, 0.8);
+.nft-card {
+    background: #161b33;
     padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    min-width: 60px;
+    border-radius: 10px;
 }
 
-/* 💎 Stil pentru Roadmap, Tokenomics și FAQ */
-.section {
-    background: rgba(0, 0, 0, 0.7);
+section {
+    margin: 50px 0;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px cyan;
-    margin: 20px auto;
-    max-width: 800px;
+    box-shadow: 0 0 10px #00d8ff;
+}
+
+footer {
+    background: black;
+    padding: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #00d8ff;
 }
