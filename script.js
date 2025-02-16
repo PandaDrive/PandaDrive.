@@ -197,3 +197,6 @@ showTestimonial(currentIndex);
 document.getElementById("chat-button").addEventListener("click", function() {
     Tawk_API.toggle();
 });
+function buyToken() {
+    alert("🛒 Funcția de cumpărare va fi activată la lansare!");
+}
