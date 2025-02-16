@@ -180,3 +180,28 @@ section:hover {
 #scrollTop:hover {
     background: white;
 }
+/* Efect de hover 3D pe carduri */
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05) rotateY(5deg);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.8);
+}
+
+/* Animație de fade-in la apariția secțiunilor */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
