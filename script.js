@@ -26,4 +26,22 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
-})();
+})();document.addEventListener("DOMContentLoaded", function () {
+    function removeDuplicates(selector) {
+        let elements = document.querySelectorAll(selector);
+        let seenTexts = new Set();
+
+        elements.forEach((el, index) => {
+            let textContent = el.textContent.trim();
+
+            if (seenTexts.has(textContent) && index !== 0) {
+                el.remove();
+            } else {
+                seenTexts.add(textContent);
+            }
+        });
+    }
+
+    removeDuplicates(".roadmap"); // Asigură-te că secțiunile au această clasă
+    removeDuplicates(".tokenomics"); // Asigură-te că aceste elemente au clasa corectă
+});
