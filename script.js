@@ -161,3 +161,14 @@ function updateCountdown() {
 // Actualizăm counterul în fiecare secundă
 const interval = setInterval(updateCountdown, 1000);
 updateCountdown();
+function submitForm() {
+    let emailInput = document.getElementById("email");
+    let confirmationMessage = document.getElementById("confirmation");
+
+    if (emailInput.value.includes("@") && emailInput.value.includes(".")) {
+        confirmationMessage.style.display = "block";
+        emailInput.value = "";
+    } else {
+        alert("❌ Introdu o adresă de email validă!");
+    }
+}
