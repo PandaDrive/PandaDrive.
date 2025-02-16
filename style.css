@@ -1,60 +1,91 @@
-/* General */
+/* Resetare generală */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Stilizare fundal */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(120deg, #003b36, #00796b);
+    background: linear-gradient(135deg, #091921, #0c2136);
     color: white;
     text-align: center;
-    margin: 0;
 }
 
-/* Navbar */
-.navbar {
+/* Meniu */
+header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
-.nav-links li {
-    display: inline;
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
     margin: 0 15px;
 }
-.nav-links a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
 
-/* Hero Section */
+/* Secțiuni */
 .hero {
-    background: url('panda-car.jpg') no-repeat center center/cover;
-    padding: 100px 20px;
-    text-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+    padding: 50px 20px;
 }
-.cta-button {
-    background: #00ff7f;
-    padding: 10px 25px;
+.hero h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+.btn {
+    background: #00ffcc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
     border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+}
+.btn:hover {
+    background: #00cca3;
 }
 
-/* NFT Market */
-.nft-market {
-    margin-top: 50px;
-}
-.swiper-container {
-    width: 80%;
-    margin: auto;
+/* Slider */
+.nft-slider {
+    padding: 50px 0;
 }
 .swiper-slide img {
-    width: 100%;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+}
+
+/* Roadmap, Tokenomics, FAQ */
+.section {
+    margin: 50px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+}
+.section h2 {
+    font-size: 30px;
+    color: #00ffcc;
 }
 
 /* Footer */
 footer {
     margin-top: 50px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
+}
+.socials a {
+    color: #00ffcc;
+    margin: 0 10px;
+    text-decoration: none;
 }
