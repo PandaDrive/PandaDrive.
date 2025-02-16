@@ -240,3 +240,34 @@ h1, h2 {
     font-size: 2em;
     text-align: center;
 }
+/* Meniu fix transparent cu efect neon */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Transparent */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 0 10px cyan;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Efect de glow la hover */
+.navbar a {
+    color: cyan;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
+}
+
+/* Efect la scroll */
+.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 0 20px cyan;
+}
