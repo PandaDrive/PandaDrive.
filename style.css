@@ -370,3 +370,44 @@ h1, h2 {
     opacity: 1;
     transform: translateY(0);
 }
+/* 📱 Optimizare pentru ecrane mici */
+@media screen and (max-width: 768px) {
+    /* Ajustează dimensiunea titlurilor */
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    /* Buton mai compact */
+    .button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    /* Meniu adaptat pentru mobil */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    /* NFT-uri mai mici pe mobil */
+    .nft-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nft-container img {
+        width: 150px;
+    }
+
+    /* Secțiuni mai compacte */
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+}
