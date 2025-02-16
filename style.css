@@ -337,3 +337,36 @@ h1, h2 {
     transform: scale(1.1);
     box-shadow: 0 0 15px cyan, 0 0 30px cyan;
 }
+/* Container NFT-uri */
+.nft-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* NFT-uri animate */
+.nft-container img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+/* Efect hover (NFT se mărește și plutește ușor) */
+.nft-container img:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 0 25px cyan;
+}
+
+/* Efect de apariție treptată la scroll */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
