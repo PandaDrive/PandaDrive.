@@ -29,4 +29,21 @@ document.addEventListener("DOMContentLoaded", function () {
     roadmap.addEventListener("mouseleave", function () {
         roadmap.style.boxShadow = "0 0 20px #00c6ff";
     });
+});// Efect de apariție pentru secțiuni la scroll
+document.addEventListener("DOMContentLoaded", function() {
+    let sections = document.querySelectorAll("section");
+
+    const revealSection = () => {
+        sections.forEach((section) => {
+            let sectionTop = section.getBoundingClientRect().top;
+            let windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 50) {
+                section.style.opacity = "1";
+            }
+        });
+    };
+
+    window.addEventListener("scroll", revealSection);
+    revealSection();
 });
